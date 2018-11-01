@@ -1,2 +1,2 @@
 # POS
-Simple point of sales ult with ngx
+Simple point of sales app with ngx
