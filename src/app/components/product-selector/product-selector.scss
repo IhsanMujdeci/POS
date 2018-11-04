@@ -1,0 +1,24 @@
+@import '../../app.component';
+
+button{
+  height: 70px;
+  min-width: 120px;
+  background-color: white;
+  border: 1px solid $light-grey;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: $primary;
+  font-weight: 600;
+
+  &:hover{
+    transition: background-color .22s;
+    background-color: lighten($secondary, 18%);
+  }
+
+  &:active {
+    transition: background-color 0ms;
+    background-color: $secondary;
+  }
+}

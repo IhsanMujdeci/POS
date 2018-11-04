@@ -1,0 +1,16 @@
+@import '../../app.component';
+
+button{
+  background-color: $primary;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width:250px;
+  border: none;
+
+  &:disabled{
+    background-color: gainsboro;
+    cursor: not-allowed;
+  }
+}
