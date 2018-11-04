@@ -46,7 +46,7 @@ export class AppComponent {
     window.print();
   }
 
-  closePopUp(){
+  closePopUp() {
     this.showPopUp = false;
     this.store.dispatch(new ProductListActions.Clear());
   }

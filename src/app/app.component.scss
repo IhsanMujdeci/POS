@@ -19,7 +19,8 @@ $light-grey: #C4C4C4;
   flex-wrap: wrap;
   align-content: flex-start;
   background-color: white;
-  padding: 20px
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .display-pay{
