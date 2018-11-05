@@ -6,9 +6,9 @@ import {ProductInterface} from '../models/product.interface';
 })
 export class ProductService implements ProductInterface {
 
-  private readonly _price: number;
-  private readonly _label: string;
-  private readonly _sku: string;
+  _price: number;
+  _label: string;
+  _sku: string;
 
   constructor(price: number, label: string, sku: string) {
     this._price = price;
