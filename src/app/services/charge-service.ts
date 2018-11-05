@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {webSocket} from 'rxjs/webSocket';
 import { Subject } from 'rxjs';
-import WebsocketEventInterface from '../models/websocket.interface';
+import {WebsocketEventInterface} from '../models/websocket.interface';
 
 @Injectable({
   providedIn: 'root'

@@ -31,7 +31,7 @@ $light-grey: #C4C4C4;
   position: relative;
 
   >* {
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
 
   .title {
@@ -103,7 +103,7 @@ $light-grey: #C4C4C4;
     .receipt-options{
       display: flex;
       justify-content: space-between;
-      padding: 10px 20px 0 20px;
+      padding: 20px 20px 0 20px;
       @media print {
         display: none;
       }
