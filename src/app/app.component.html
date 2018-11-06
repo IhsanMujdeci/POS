@@ -1,11 +1,9 @@
 <app-header></app-header>
 <div class="app-container">
 
-  <div
-    class="product-selector-container"
-    *ngIf="productSelector | async as p">
+  <div class="product-selector-container">
     <app-product-selector
-      *ngFor="let product of p"
+      *ngFor="let product of productSelector | async"
       (click)="addProductToCart(product)"
       [label]="product.label">
 
@@ -18,11 +16,9 @@
       Current Sale
     </h6>
 
-    <div
-      class="product-list-container"
-      *ngIf="productList | async as p">
+    <div class="product-list-container">
       <app-product-list
-        *ngFor="let product of p"
+        *ngFor="let product of productList | async"
         [price]="product.price"
         [label]="product.label">
 
@@ -38,7 +34,7 @@
 
 <div class="popup" (click)="closePopUp()" *ngIf="showPopUp">
 
-  <div class="receipt" (click)="$event.stopPropagation()" *ngIf="productList |async as p">
+  <div class="receipt" (click)="$event.stopPropagation()">
 
     <div class="receipt-options">
       <p (click)="closePopUp()" class="button-font close">close</p>
@@ -48,7 +44,7 @@
     <h6 class="title">Receipt</h6>
 
     <div class="receipt-item-container">
-      <div class="receipt-item" *ngFor="let product of p">
+      <div class="receipt-item" *ngFor="let product of productList| async">
         <p>{{product.label}}</p>
         <p>${{product.price | number:'.2-2'}}</p>
       </div>
